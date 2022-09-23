@@ -5,6 +5,7 @@ alias ea='gedit ~/.bash_aliases'
 
 #ROS2
 alias srf='source /opt/ros/foxy/setup.bash'
+alias srn='source /opt/ros/noetic/setup.bash'
 alias sw='. install/local_setup.bash'
 alias srw='source /opt/ros/foxy/setup.bash; . install/local_setup.bash'
 
