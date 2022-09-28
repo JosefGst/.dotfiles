@@ -19,6 +19,7 @@ alias gr='rqt_graph'
 alias myrviz='rosrun rviz rviz -d /home/u/rviz/rviz.rviz'
 alias myrtabviz='export ROS_NAMESPACE=rtabmap && rosrun rtabmap_ros rtabmapviz'
 alias tel='rosrun teleop_twist_keyboard teleop_twist_keyboard.py'
+alias conf='rosrun rqt_reconfigure rqt_reconfigure'
 roslocal() {
     export ROS_IP=127.0.0.1
     export ROS_MASTER_URI=http://127.0.0.1:11311
