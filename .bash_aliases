@@ -8,6 +8,9 @@ alias srf='source /opt/ros/foxy/setup.bash'
 alias srn='source /opt/ros/noetic/setup.bash'
 alias sw='. install/local_setup.bash'
 alias srw='source /opt/ros/foxy/setup.bash; . install/local_setup.bash'
+alias tel2='ros2 run teleop_twist_keyboard teleop_twist_keyboard'
+alias rl2='ros2 topic list'
+alias rv2='ros2 run rviz2 rviz2'
 
 #ROS1
 alias sws='source devel/setup.bash'
