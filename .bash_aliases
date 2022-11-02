@@ -4,6 +4,8 @@ alias eb='gedit ~/.bashrc'
 alias ea='gedit ~/.bash_aliases'
 
 #ROS2
+alias rbuild='colcon build --symlink-install'
+alias rdep='rosdep install -i --from-path src --rosdistro humble -y'
 alias srf='source /opt/ros/foxy/setup.bash'
 alias srn='source /opt/ros/noetic/setup.bash'
 alias sw='. install/local_setup.bash'
