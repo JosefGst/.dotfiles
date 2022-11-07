@@ -5,6 +5,7 @@ alias ea='gedit ~/.bash_aliases'
 
 #ROS2
 alias rbuild='colcon build --symlink-install'
+alias rbsp='colcon build --packages-select' # useage: rspb <package name>
 alias rdep='rosdep install -i --from-path src --rosdistro humble -y'
 alias srf='source /opt/ros/foxy/setup.bash'
 alias srn='source /opt/ros/noetic/setup.bash'
@@ -13,6 +14,7 @@ alias srw='source /opt/ros/foxy/setup.bash; . install/local_setup.bash'
 alias tel2='ros2 run teleop_twist_keyboard teleop_twist_keyboard'
 alias rl2='ros2 topic list'
 alias rv2='ros2 run rviz2 rviz2'
+alias tftree='ros2 run tf2_tools view_frames'
 
 #ROS1
 alias sws='source devel/setup.bash'
