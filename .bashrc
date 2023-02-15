@@ -14,3 +14,12 @@ export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/opt/ros/humble/share/turtlebot3_gaz
 # Colcon
 source /usr/share/colcon_cd/function/colcon_cd.sh
 export _colcon_cd_root=/opt/ros/humble/
+
+# automatic ip
+export ROS_IP=$(hostname -I | awk '{print $1;}')
+export ROS_HOSTNAME=$ROS_IP
+export ROS_MASTER_URI=http://$ROS_IP:11311
+
+#Robots
+#Deliverybot3
+#export ROS_MASTER_URI=http://<IP of robot>:11311
