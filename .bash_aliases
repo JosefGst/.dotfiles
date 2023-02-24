@@ -7,7 +7,7 @@ alias gr='rqt_graph'
 alias srf='source /opt/ros/foxy/setup.bash'
 alias srn='source /opt/ros/noetic/setup.bash'
 
-if [ "$ROS_DISTRO" = humble ]; then
+if [ "$ROS_VERSION" = 2 ]; then
 	#ROS2
 	alias rbuild='colcon build --symlink-install'
 	alias rbsp='colcon build --packages-select' # useage: rspb <package name>
@@ -20,7 +20,7 @@ if [ "$ROS_DISTRO" = humble ]; then
 	alias rv='ros2 run rviz2 rviz2'
 	alias rtf='ros2 run tf2_tools view_frames'
 	alias rplot='ros2 run rqt_plot rqt_plot'
-elif [ "$ROS_DISTRO" = melodic ]; then
+elif [ "$ROS_VERSION" = 1 ]; then
 	#ROS1
 	alias sw='source devel/setup.bash'
 	alias sc='source ~/ros/cartographer_ws/install_isolated/setup.bash --extend'
