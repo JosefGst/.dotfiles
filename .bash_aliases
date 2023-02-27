@@ -32,6 +32,7 @@ elif [ "$ROS_VERSION" = 1 ]; then
 	alias tel='rosrun teleop_twist_keyboard teleop_twist_keyboard.py _speed:=0.3 _turn:=0.5'
 	alias reconf='rosrun rqt_reconfigure rqt_reconfigure'
 	alias clearmap='rosservice call /move_base/clear_costmaps "{}"'
+	alias plot='rosrun plotjuggler plotjuggler'
 fi
 
 
