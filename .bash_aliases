@@ -8,7 +8,7 @@ alias srf='source /opt/ros/foxy/setup.bash'
 alias srn='source /opt/ros/noetic/setup.bash'
 
 if [ "$ROS_VERSION" = 2 ]; then
-	#ROS2
+	echo "ROS2"
 	alias rbuild='colcon build --symlink-install'
 	alias rbsp='colcon build --packages-select' # useage: rspb <package name>
 	alias rdep='rosdep install -i --from-path src --rosdistro humble -y'
@@ -21,7 +21,7 @@ if [ "$ROS_VERSION" = 2 ]; then
 	alias rtf='ros2 run tf2_tools view_frames'
 	alias plot='rosrun plotjuggler plotjuggler'
 elif [ "$ROS_VERSION" = 1 ]; then
-	#ROS1
+	echo "ROS1"
 	alias sw='source devel/setup.bash'
 	alias sc='source ~/ros/cartographer_ws/install_isolated/setup.bash --extend'
 	alias rl='rostopic list'
