@@ -20,6 +20,7 @@ if [ "$ROS_VERSION" = 2 ]; then
 	alias rv='ros2 run rviz2 rviz2'
 	alias rtf='ros2 run tf2_tools view_frames'
 	alias plot='rosrun plotjuggler plotjuggler'
+	alias rdep='rosdep install --from-paths src -y --ignore-src'
 elif [ "$ROS_VERSION" = 1 ]; then
 	echo "ROS1"
 	alias sw='source devel/setup.bash'
