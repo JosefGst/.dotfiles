@@ -14,12 +14,12 @@ if [ "$ROS_VERSION" = 2 ]; then
 	alias rdep='rosdep install -i --from-path src --rosdistro humble -y'
 	alias sw='. install/local_setup.bash'
 	alias srw='source /opt/ros/foxy/setup.bash; . install/local_setup.bash'
-	alias tel='ros2 run teleop_twist_keyboard teleop_twist_keyboard _speed:=0.3 _turn:=0.5'
+	alias tel='ros2 run teleop_twist_keyboard teleop_twist_keyboard _speed:=0.4 _turn:=0.5'
 	alias rl='ros2 topic list'
 	alias rnl='ros2 node list'
 	alias rv='ros2 run rviz2 rviz2'
 	alias rtf='ros2 run tf2_tools view_frames'
-	alias rplot='ros2 run rqt_plot rqt_plot'
+	alias plot='rosrun plotjuggler plotjuggler'
 elif [ "$ROS_VERSION" = 1 ]; then
 	#ROS1
 	alias sw='source devel/setup.bash'
@@ -29,7 +29,7 @@ elif [ "$ROS_VERSION" = 1 ]; then
 	alias rtf='rosrun rqt_tf_tree rqt_tf_tree'
 	alias myrviz='rosrun rviz rviz -d /home/u/rviz/rviz.rviz'
 	alias myrtabviz='export ROS_NAMESPACE=rtabmap && rosrun rtabmap_ros rtabmapviz'
-	alias tel='rosrun teleop_twist_keyboard teleop_twist_keyboard.py _speed:=0.3 _turn:=0.5'
+	alias tel='rosrun teleop_twist_keyboard teleop_twist_keyboard.py _speed:=0.4 _turn:=0.5'
 	alias reconf='rosrun rqt_reconfigure rqt_reconfigure'
 	alias clearmap='rosservice call /move_base/clear_costmaps "{}"'
 	alias plot='rosrun plotjuggler plotjuggler'
