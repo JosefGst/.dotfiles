@@ -11,7 +11,6 @@ if [ "$ROS_VERSION" = 2 ]; then
 	echo "ROS2"
 	alias rbuild='colcon build --symlink-install'
 	alias rbsp='colcon build --packages-select' # useage: rspb <package name>
-	alias rdep='rosdep install -i --from-path src --rosdistro humble -y'
 	alias sw='. install/local_setup.bash'
 	alias srw='source /opt/ros/foxy/setup.bash; . install/local_setup.bash'
 	alias tel='ros2 run teleop_twist_keyboard teleop_twist_keyboard _speed:=0.4 _turn:=0.5'
@@ -20,7 +19,7 @@ if [ "$ROS_VERSION" = 2 ]; then
 	alias rv='ros2 run rviz2 rviz2'
 	alias rtf='ros2 run tf2_tools view_frames'
 	alias plot='rosrun plotjuggler plotjuggler'
-	alias rdep='rosdep install --from-paths src -y --ignore-src'
+	alias rdep='rosdep update && rosdep install -i --from-path src --rosdistro $ROS_DISTRO -y'
 elif [ "$ROS_VERSION" = 1 ]; then
 	echo "ROS1"
 	alias sw='source devel/setup.bash'
@@ -34,6 +33,7 @@ elif [ "$ROS_VERSION" = 1 ]; then
 	alias reconf='rosrun rqt_reconfigure rqt_reconfigure'
 	alias clearmap='rosservice call /move_base/clear_costmaps "{}"'
 	alias plot='rosrun plotjuggler plotjuggler'
+	alias rdep='rosdep update && rosdep install -i --from-path src --rosdistro $ROS_DISTRO -y'
 fi
 
 
