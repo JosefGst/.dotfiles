@@ -1,7 +1,7 @@
 #COMMON
 alias sb='source ~/.bashrc'
-alias eb='gedit ~/.bashrc'
-alias ea='gedit ~/.bash_aliases'
+alias eb='vim ~/.bashrc'
+alias ea='vim ~/.bash_aliases'
 
 alias gr='rqt_graph'
 alias srf='source /opt/ros/foxy/setup.bash'
