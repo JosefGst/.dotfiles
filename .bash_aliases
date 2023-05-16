@@ -4,8 +4,9 @@ alias eb='vim ~/.bashrc'
 alias ea='vim ~/.bash_aliases'
 
 alias gr='rqt_graph'
-alias srf='source /opt/ros/foxy/setup.bash'
-alias srn='source /opt/ros/noetic/setup.bash'
+alias srf='source /opt/ros/foxy/setup.bash ; echo "$ROS_DISTRO"'
+alias srn='source /opt/ros/noetic/setup.bash ; echo "$ROS_DISTRO"'
+
 
 echo "$ROS_DISTRO"
 if [ "$ROS_VERSION" = 2 ]; then
