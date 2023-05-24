@@ -12,7 +12,9 @@ echo "$ROS_DISTRO"
 if [ "$ROS_VERSION" = 2 ]; then
 	alias rbuild='colcon build --symlink-install'
 	alias rbsp='colcon build --packages-select' # useage: rspb <package name>
-	alias sw='source install/local_setup.bash'
+	alias asdf='rosbuild --this -c'          # Builds the package in the current directory (and its dependencies)
+        alias zxcv='rosbuild --this --no-deps'   # Builds just the package in the current directory
+        alias sw='source_ros'
 	alias tel='ros2 run teleop_twist_keyboard teleop_twist_keyboard _speed:=0.4 _turn:=0.5'
 	alias rl='ros2 topic list'
 	alias rnl='ros2 node list'
