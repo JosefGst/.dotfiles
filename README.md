@@ -1,6 +1,9 @@
 # bash_files
 bash aliases and settings for ROS
 
+# dependencies
+https://github.com/MetroRobots/ros_command
+
 ## bashrc
 copy the **.bashrc** to the end of your .bashrc file and move 
 
