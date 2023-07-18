@@ -16,6 +16,7 @@ if [ "$ROS_VERSION" = 2 ]; then
         alias zxcv='rosbuild --this --no-deps'   # Builds just the package in the current directory
         alias sw='source_ros'
 	alias tel='ros2 run teleop_twist_keyboard teleop_twist_keyboard _speed:=0.4 _turn:=0.5'
+	alias joy='ros2 launch teleop_twist_joy teleop-launch.py joy_config:='xbox' joy_vel:=joy_vel'
 	alias rl='ros2 topic list'
 	alias rnl='ros2 node list'
 	alias rsl='ros2 service list'
