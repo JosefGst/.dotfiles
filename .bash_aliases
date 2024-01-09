@@ -2,6 +2,7 @@
 alias sb='source ~/.bashrc'
 alias eb='vim ~/.bashrc'
 alias ea='vim ~/.bash_aliases'
+alias mux='tmuxinator'
 
 alias gr='rqt_graph'
 alias srf='source /opt/ros/foxy/setup.bash ; echo "$ROS_DISTRO"'
