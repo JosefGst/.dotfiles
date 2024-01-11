@@ -16,7 +16,7 @@ if [ "$ROS_VERSION" = 2 ]; then
 	alias rbsp='colcon build --symlink-install --packages-select' # useage: rspb <package name>
 	alias asdf='rosbuild --this -c'          # Builds the package in the current directory (and its dependencies)
         alias zxcv='rosbuild --this --no-deps'   # Builds just the package in the current directory
-        alias sw='source_ros'
+        alias sw='source install/setup.bash'
 	alias tel='ros2 run teleop_twist_keyboard teleop_twist_keyboard _speed:=0.4 _turn:=0.5'
 	alias joy='ros2 launch teleop_twist_joy teleop-launch.py joy_config:='xbox' joy_vel:=joy_vel'
 	alias rl='ros2 topic list'
