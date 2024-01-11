@@ -22,6 +22,7 @@ if [ "$ROS_VERSION" = 2 ]; then
 	alias rnl='ros2 node list'
 	alias rsl='ros2 service list'
 	alias rpl='ros2 param list'
+	alias rcl='ros2 component list'
 	alias rv='ros2 run rviz2 rviz2'
 	alias rtf='ros2 run tf2_tools view_frames && open `ls | grep frames | grep .pdf | tail -1`'
 	alias plot='rosrun plotjuggler plotjuggler'
