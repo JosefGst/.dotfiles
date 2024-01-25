@@ -19,5 +19,6 @@ to the very bottom.
 
 ## for bash aliases run
     wget -O ~/.bash_aliases https://raw.githubusercontent.com/JosefGst/bash_files/main/.bash_aliases
+    wget -O ~/.bash_aliases https://raw.githubusercontent.com/JosefGst/bash_files/main/.bash_coloring
 
 It will download the aliases settings into the root **or** you manually create a '.bash_aliases' and copy paste from github.
