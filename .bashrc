@@ -2,6 +2,11 @@
 export PATH=$PATH:/home/u/.local/bin
 export PATH=$PATH:/usr/local/lib/python3.10/dist-packages
 
+# Terminal coloring
+if [ -f ~/.terminal_coloring.bash ]; then
+        . ~/.terminal_coloring.bash
+fi
+
 # ROS2
 source /opt/ros/humble/setup.bash
 
