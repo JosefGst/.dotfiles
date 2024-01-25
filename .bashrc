@@ -3,8 +3,8 @@ export PATH=$PATH:/home/u/.local/bin
 export PATH=$PATH:/usr/local/lib/python3.10/dist-packages
 
 # Terminal coloring
-if [ -f ~/.terminal_coloring.bash ]; then
-        . ~/.terminal_coloring.bash
+if [ -f ~/.bash_coloring ]; then
+        . ~/.bash_coloring
 fi
 
 # ROS2
