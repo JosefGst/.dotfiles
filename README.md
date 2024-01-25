@@ -2,6 +2,7 @@
 bash aliases and settings for ROS
 
 # dependencies
+Some ROS related alias have dependency with:
 https://github.com/MetroRobots/ros_command
 
 ## bashrc
