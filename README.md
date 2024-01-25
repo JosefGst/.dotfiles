@@ -17,8 +17,10 @@ copy the **.bashrc** to the end of your .bashrc file and move
     fi
 to the very bottom.
 
-## for bash aliases run
+## for downloading bash aliases and bash_coloring
     wget -O ~/.bash_aliases https://raw.githubusercontent.com/JosefGst/bash_files/main/.bash_aliases
     wget -O ~/.bash_aliases https://raw.githubusercontent.com/JosefGst/bash_files/main/.bash_coloring
+
+The bash_coloring file is borrowed form [ros_team_workspace](https://github.com/StoglRobotics/ros_team_workspace/blob/master/scripts/configuration/terminal_coloring.bash)
 
 It will download the aliases settings into the root **or** you manually create a '.bash_aliases' and copy paste from github.
