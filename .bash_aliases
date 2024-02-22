@@ -26,6 +26,7 @@ if [ "$ROS_VERSION" = 2 ]; then
 	alias rcl='ros2 component list'
 	alias rv='ros2 run rviz2 rviz2'
 	alias rtf='ros2 run tf2_tools view_frames && open `ls | grep frames | grep .pdf | tail -1`'
+	alias reconf='ros2 run rqt_reconfigure rqt_reconfigure'
 	alias plot='rosrun plotjuggler plotjuggler'
 	alias rdep='sudo apt install python3-rosdep2 && rosdep update && rosdep install -i --from-path src --rosdistro $ROS_DISTRO -y'
 elif [ "$ROS_VERSION" = 1 ]; then
