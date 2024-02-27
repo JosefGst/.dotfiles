@@ -10,7 +10,7 @@ https://github.com/MetroRobots/ros_command
     wget -O ~/.bash_coloring https://raw.githubusercontent.com/JosefGst/bash_files/main/.bash_coloring
     
 ## aliases
-copy the **.bashrc** to the end of your .bashrc file and move 
+Move following block to the very bottom of the bashrc file.
 
     # Alias definitions.
     # You may want to put all your additions into a separate file like
@@ -20,8 +20,9 @@ copy the **.bashrc** to the end of your .bashrc file and move
     if [ -f ~/.bash_aliases ]; then
         . ~/.bash_aliases
     fi
-to the very bottom.
+
 ## git status in terminal
+Paste to bashrc file.
 
     # Terminal coloring
     if [ -f ~/.bash_coloring ]; then
