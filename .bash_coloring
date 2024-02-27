@@ -55,7 +55,7 @@ export TERMINAL_BG_COLOR_LIGHT_CYAN='\e[1;46m'
 export TERMINAL_BG_COLOR_LIGHT_GRAY='\e[47m'
 export TERMINAL_BG_COLOR_WHITE='\e[1;47m'
 
-if [ -n "$SSH_CLIENT" ]; then text="-ssh-session"
+if [ -n "$SSH_CLIENT" ]; then text="-ssh"
 fi
 
 function get_gitbranch {
