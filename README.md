@@ -5,7 +5,11 @@ bash aliases and settings for ROS
 Some ROS related alias have dependency with:
 https://github.com/MetroRobots/ros_command
 
-## bashrc
+## downloading bash aliases and bash_coloring
+    wget -O ~/.bash_aliases https://raw.githubusercontent.com/JosefGst/bash_files/main/.bash_aliases
+    wget -O ~/.bash_coloring https://raw.githubusercontent.com/JosefGst/bash_files/main/.bash_coloring
+    
+## aliases
 copy the **.bashrc** to the end of your .bashrc file and move 
 
     # Alias definitions.
@@ -17,11 +21,15 @@ copy the **.bashrc** to the end of your .bashrc file and move
         . ~/.bash_aliases
     fi
 to the very bottom.
+## git status in terminal
 
-## for downloading bash aliases and bash_coloring
-    wget -O ~/.bash_aliases https://raw.githubusercontent.com/JosefGst/bash_files/main/.bash_aliases
-    wget -O ~/.bash_coloring https://raw.githubusercontent.com/JosefGst/bash_files/main/.bash_coloring
+    # Terminal coloring
+    if [ -f ~/.bash_coloring ]; then
+            . ~/.bash_coloring
+    fi
+    
 
+## Resources:
 The bash_coloring file is borrowed form [ros_team_workspace](https://github.com/StoglRobotics/ros_team_workspace/blob/master/scripts/configuration/terminal_coloring.bash)
 
 It will download the aliases settings into the root **or** you manually create a '.bash_aliases' and copy paste from github.
