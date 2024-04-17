@@ -1,7 +1,7 @@
 # Dotfiles
 Manage my personal collection of configuration files and aliases mostly for ROS using stow.
 
-## Dependencies
+## Dependencies (optional)
 Some ROS related alias have dependency with:
 https://github.com/MetroRobots/ros_command
 
