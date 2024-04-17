@@ -1,5 +1,5 @@
-# dotfiles
-Manage A collection of configuration files and aliases mostly for ROS using stow.
+# Dotfiles
+Manage my personal collection of configuration files and aliases mostly for ROS using stow.
 
 ## Dependencies
 Some ROS related alias have dependency with:
