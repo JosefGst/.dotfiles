@@ -1,3 +1,7 @@
 [user]
 	name = josefgst
 	email = josefgstoettner@live.at
+[core]
+	editor = code --wait
+[init]
+    defaultBranch = main

@@ -7,6 +7,7 @@ https://github.com/MetroRobots/ros_command
 
 ## Setup
     sudo apt install stow
+    cd ~
     git clone git@github.com:JosefGst/.dotfiles.git -b dotfiles
     cd .dotfiles && stow .
     
