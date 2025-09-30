@@ -110,21 +110,21 @@ if ! shopt -oq posix; then
 fi
 
 # Gazebo
-export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/opt/ros/foxy/share/turtlebot3_gazebo/models
-source /usr/share/gazebo/setup.sh
+# export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/opt/ros/foxy/share/turtlebot3_gazebo/models
+# source /usr/share/gazebo/setup.sh
 
 
-export ROS_DOMAIN_ID=30 #TURTLEBOT3
+export ROS_DOMAIN_ID=0 #TURTLEBOT3
 export TURTLEBOT3_MODEL=waffle
+export RMW_IMPLEMENTATION=rmw_zenoh_cpp
+export ZENOH_ROUTER_CONFIG_URI=$HOME/ros/watertank_ws/src/DEFAULT_RMW_ZENOH_ROUTER_CONFIG.json5
+# export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+# export FASTRTPS_DEFAULT_PROFILES_FILE=/path/to/your/fastrtps.xml
 
 # ROS2
 # source /opt/ros/foxy/setup.bash
-source /opt/ros/noetic/setup.bash
-
-# Grandprix
-export CARLA_ROOT=~/projects/grandprix/map
-export PYTHONPATH=$PYTHONPATH:$CARLA_ROOT/PythonAPI/carla/dist/carla-0.9.13-py3.8-linux-x86_64.egg:$CARLA_ROOT/PythonAPI/carla
-export VK_ICD_FILENAMES="/usr/share/vulkan/icd.d/nvidia_icd.json"
+# source /opt/ros/noetic/setup.bash
+source /opt/ros/jazzy/setup.bash
 
 # Tmuxinator
 export EDITOR='vim'
@@ -159,8 +159,10 @@ export ROS_MASTER_URI=http://$ROS_IP:11311
 
 
 #Github Copilot
-eval "$(gh copilot alias -- bash)"
+# eval "$(gh copilot alias -- bash)"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# . "$HOME/.local/bin/env"

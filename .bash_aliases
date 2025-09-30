@@ -17,7 +17,7 @@ if [ "$ROS_VERSION" = 2 ]; then
 	alias asdf='rosbuild --this -c'          # Builds the package in the current directory (and its dependencies)
 	alias zxcv='rosbuild --this --no-deps'   # Builds just the package in the current directory
 	alias sw='source install/setup.bash'
-	alias tel='ros2 run teleop_twist_keyboard teleop_twist_keyboard _speed:=0.4 _turn:=0.5'
+	alias tel='ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -p stamped:=true'
 	alias joy='ros2 launch teleop_twist_joy teleop-launch.py joy_config:='xbox' joy_vel:=joy_vel'
 	alias rl='ros2 topic list'
 	alias rnl='ros2 node list'
@@ -28,7 +28,7 @@ if [ "$ROS_VERSION" = 2 ]; then
 	alias rtf='ros2 run tf2_tools view_frames && open `ls | grep frames | grep .pdf | tail -1`'
 	alias reconf='ros2 run rqt_reconfigure rqt_reconfigure'
 	alias plot='rosrun plotjuggler plotjuggler'
-	alias rdep='sudo apt install python3-rosdep2 && rosdep update && rosdep install -i --from-path src --rosdistro $ROS_DISTRO -y'
+	alias rdep='sudo apt install python3-rosdep && rosdep update && rosdep install -i --from-path src --rosdistro $ROS_DISTRO -y'
 elif [ "$ROS_VERSION" = 1 ]; then
 	alias sw='source devel/setup.bash'
 	alias sc='source ~/ros/cartographer_ws/install_isolated/setup.bash --extend'
