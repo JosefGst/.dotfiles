@@ -13,7 +13,7 @@ mv .bashrc .bashrc_back
 # install
 sudo apt install stow
 cd ~
-git clone git@github.com:JosefGst/.dotfiles.git -b dotfiles
+git clone git@github.com:JosefGst/.dotfiles.git
 cd .dotfiles && stow .
 ```    
 
