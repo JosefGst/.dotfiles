@@ -118,8 +118,8 @@ export ROS_DOMAIN_ID=0 #TURTLEBOT3
 export TURTLEBOT3_MODEL=waffle
 
 # DDS
-export RMW_IMPLEMENTATION=rmw_zenoh_cpp
-export ZENOH_ROUTER_CONFIG_URI=$HOME/ros/watertank_ws/src/DEFAULT_RMW_ZENOH_ROUTER_CONFIG.json5
+# export RMW_IMPLEMENTATION=rmw_zenoh_cpp
+# export ZENOH_ROUTER_CONFIG_URI=$HOME/ros/watertank_ws/src/DEFAULT_RMW_ZENOH_ROUTER_CONFIG.json5
 # export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 # export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
 # export FASTRTPS_DEFAULT_PROFILES_FILE=/path/to/your/fastrtps.xml
