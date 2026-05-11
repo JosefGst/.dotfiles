@@ -12,7 +12,7 @@ alias srn='source /opt/ros/noetic/setup.bash ; echo "$ROS_DISTRO"'
 
 echo "$ROS_DISTRO"
 if [ "$ROS_VERSION" = 2 ]; then
-	alias rbuild='colcon build --symlink-install'
+	alias rb='colcon build --symlink-install'
 	alias rbsp='colcon build --symlink-install --packages-select' # useage: rspb <package name>
 	alias asdf='rosbuild --this -c'          # Builds the package in the current directory (and its dependencies)
 	alias zxcv='rosbuild --this --no-deps'   # Builds just the package in the current directory

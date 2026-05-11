@@ -118,7 +118,7 @@ export ROS_DOMAIN_ID=0 #TURTLEBOT3
 export TURTLEBOT3_MODEL=waffle
 
 # DDS
-# export RMW_IMPLEMENTATION=rmw_zenoh_cpp
+export RMW_IMPLEMENTATION=rmw_zenoh_cpp
 # export ZENOH_ROUTER_CONFIG_URI=$HOME/ros/watertank_ws/src/DEFAULT_RMW_ZENOH_ROUTER_CONFIG.json5
 # export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 # export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
@@ -127,7 +127,8 @@ export TURTLEBOT3_MODEL=waffle
 # ROS2
 # source /opt/ros/foxy/setup.bash
 # source /opt/ros/noetic/setup.bash
-source /opt/ros/jazzy/setup.bash
+# source /opt/ros/jazzy/setup.bash
+source /opt/ros/lyrical/setup.bash
 
 # Tmuxinator
 export EDITOR='vim'
@@ -147,9 +148,9 @@ if [ -f ~/.bash_coloring ]; then
 fi
 
 # automatic ip ROS1
-export ROS_IP=$(hostname -I | awk '{print $1;}')
-export ROS_HOSTNAME=$ROS_IP
-export ROS_MASTER_URI=http://$ROS_IP:11311
+# export ROS_IP=$(hostname -I | awk '{print $1;}')
+# export ROS_HOSTNAME=$ROS_IP
+# export ROS_MASTER_URI=http://$ROS_IP:11311
 
 #Robots
 #TKO ROBOT 2
