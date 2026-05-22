@@ -109,6 +109,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
+
+# Enable Graphics in Docker
+xhost +local:docker
+
 # Gazebo
 # export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/opt/ros/foxy/share/turtlebot3_gazebo/models
 # source /usr/share/gazebo/setup.sh
@@ -119,7 +123,7 @@ export TURTLEBOT3_MODEL=waffle
 
 # DDS
 export RMW_IMPLEMENTATION=rmw_zenoh_cpp
-# export ZENOH_ROUTER_CONFIG_URI=$HOME/ros/watertank_ws/src/DEFAULT_RMW_ZENOH_ROUTER_CONFIG.json5
+export ZENOH_ROUTER_CONFIG_URI=$HOME/Zenoh_config/DEFAULT_RMW_ZENOH_ROUTER_CONFIG.json5
 # export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 # export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
 # export FASTRTPS_DEFAULT_PROFILES_FILE=/path/to/your/fastrtps.xml
@@ -129,6 +133,9 @@ export RMW_IMPLEMENTATION=rmw_zenoh_cpp
 # source /opt/ros/noetic/setup.bash
 # source /opt/ros/jazzy/setup.bash
 source /opt/ros/lyrical/setup.bash
+
+# Colcon autocomplete
+source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
 
 # Tmuxinator
 export EDITOR='vim'
@@ -146,21 +153,6 @@ fi
 if [ -f ~/.bash_coloring ]; then
         . ~/.bash_coloring
 fi
-
-# automatic ip ROS1
-# export ROS_IP=$(hostname -I | awk '{print $1;}')
-# export ROS_HOSTNAME=$ROS_IP
-# export ROS_MASTER_URI=http://$ROS_IP:11311
-
-#Robots
-#TKO ROBOT 2
-#export ROS_MASTER_URI=http://192.168.1.10:11311
-#TKO ROBOT 1 
-#export ROS_MASTER_URI=http://192.168.1.10:11311
-#Deliverybot ROS1 
-#export ROS_MASTER_URI=http://172.30.200.147:11311
-
-
 
 #Github Copilot
 # eval "$(gh copilot alias -- bash)"
